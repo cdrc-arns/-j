@@ -5,9 +5,13 @@
     <%= link_to edit_article_path(@article.id), class: 'btn btn-light btn-sm border' do %>
       <i class="fa fa-pencil"></i> Modifier cet article
     <% end %>
-    <%= link_to article_path(@article.id), data: {turbo_method: :delete, turbo_confirm: "Supprimer #{@article.title}?"} do %>
+
+    <!--<%= button_to articles_path(@article.id), data: {turbo_method: :delete, turbo_confirm: "Supprimer cet article?"} do %>
           <i class="fa-regular fa-trash-can"></i>supprimer cet article
-        <% end %>
+        <% end %>-->
+    <%= button_to "Destroy", @article ,
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %>
   </div>
 
 
