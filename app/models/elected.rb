@@ -1,2 +1,0 @@
-class Elected < ApplicationRecord
-end

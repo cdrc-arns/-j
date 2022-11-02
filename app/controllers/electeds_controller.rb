@@ -1,2 +1,0 @@
-class ElectedsController < ApplicationController
-end
