@@ -1,0 +1,2 @@
+class Nao < ApplicationRecord
+end
