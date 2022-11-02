@@ -1,0 +1,2 @@
+class AccordancesController < ApplicationController
+end
