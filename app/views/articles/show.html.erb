@@ -1,0 +1,20 @@
+<h1>Articles#Show</h1>
+<div class="container mt-5">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h1><%= @article.title %></h1>
+    <%= link_to edit_article_path(@article.id), class: 'btn btn-light btn-sm border' do %>
+      <i class="fa fa-pencil"></i> Modifier cet article
+    <% end %>
+    <%= link_to article_path(@article.id), data: {turbo_method: :delete, turbo_confirm: "Supprimer #{@article.title}?"} do %>
+          <i class="fa-regular fa-trash-can"></i>supprimer cet article
+        <% end %>
+  </div>
+
+
+  <p class="well"><%= @article.description %></p>
+
+  <hr>
+  <%= link_to root_path do %>
+    <i class="fa-solid fa-arrow-rotate-left"></i> Back to list
+  <% end %>
+</div>

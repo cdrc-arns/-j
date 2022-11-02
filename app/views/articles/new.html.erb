@@ -1,0 +1,11 @@
+<h1>Articles#New</h1>
+<div class="container mt-5">
+  <h1>Nouvel article</h1>
+
+  <%= render "form", article: @article %>
+
+  <hr>
+  <%= link_to root_path do %>
+    <i class="fa-solid fa-arrow-rotate-left"></i> Retour à l'accueil
+  <% end %>
+</div>
