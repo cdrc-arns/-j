@@ -14,6 +14,7 @@
           </div>
         <% end %>
         <%= article.description %>
+        <%= link_to "Télécharger le document", article.attachment_url, target: :_blank %>
       </div>
     <% end %>
   </div>
