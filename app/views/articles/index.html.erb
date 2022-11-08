@@ -16,8 +16,8 @@
 
         <%= article.description %>
 
-          <%= cl_image_tag @article.photo.key, height: 300, width: 400, crop: :fill %>
 
+        <%= cl_image_tag article.photo_url %>
         <%= link_to "Télécharger le document", article.attachment_url, target: :_blank %>
       </div>
     <% end %>

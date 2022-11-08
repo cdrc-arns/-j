@@ -14,8 +14,9 @@
                         data: { confirm: 'Are you sure?' } %>
   </div>
 
-
+  <p></p>
   <p class="well"><%= @article.description %></p>
+  <%= cl_image_tag @article.photo_url %>
   <p class="well"><%= @article.attachment_url %></p>
 
   <hr>
