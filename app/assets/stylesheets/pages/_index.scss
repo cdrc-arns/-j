@@ -1,2 +1,8 @@
 // Import page-specific CSS files here.
 @import "home";
+
+.banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
