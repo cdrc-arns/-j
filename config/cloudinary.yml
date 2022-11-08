@@ -1,0 +1,11 @@
+development:
+  cloud_name: "dj5ui9nro"
+  api_key: "471362685496497"
+  api_secret: "ouECATL8e-Xaankceuz5X67KuUk"
+  secure: true
+
+production:
+  cloud_name: "dj5ui9nro"
+  api_key: "471362685496497"
+  api_secret: "ouECATL8e-Xaankceuz5X67KuUk"
+  secure:true
