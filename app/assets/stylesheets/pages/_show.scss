@@ -1,0 +1,89 @@
+.show-title h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  font-size: 36px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.show-container {
+  margin: 40px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.show-photo img {
+  width: 400px;
+  height: 100%;
+}
+
+.show-content {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+}
+
+.show-description {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.show-attachment {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.show-attachment a {
+  color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.show-attachment a:hover {
+  color: #DF5A25;
+}
+
+.show-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.show-btn {
+  margin: 10px;
+}
+
+.show-btn a {
+  height: 40px;
+}
+
+.button_to {
+  background-color: #DF5A25;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.delete-btn {
+  color: white;
+  background-color: #DF5A25;
+  border-radius: 5px;
+  border: #DF5A25;
+}
+
+.delete-btn:hover {
+  color: black;
+}
