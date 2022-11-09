@@ -61,7 +61,12 @@
 
   :hover {
     color: #DF5A25;
+    text-decoration: underline;
   }
+}
+
+.nav-item a {
+  transition: 0,4s ease-in-out;
 }
 
 .log-btn {
@@ -72,4 +77,8 @@
   font-weight: 500;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   border: none;
+}
+
+.log-btn:hover {
+  color: black;
 }
