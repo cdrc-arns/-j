@@ -11,34 +11,38 @@
 <% end %>
 
 <div class="articles-container">
-  <div class="cover mb-4 d-flex align-items-center justify-content-center">
-    <div class="text-center text-white">
-      <h3 class="typed-js" data-controller="typed-js"></h3>
-    </div>
-  </div>
 
-  <div class="container py-5">
-    <div class="row">
+
+  <div class="card-container">
+
       <% @articles.each do |article| %>
-        <div class="co-12 col-sm-6 col-md-4 mb-3">
-          <% if user_signed_in? %>
-            <%= link_to article_path(article), class:"text-decoration-none" do %>
-              <div class="card-category">
-                <i class="fa fa-pencil"></i>
+        <div class="card-article">
+          <div class="card-photo">
+            <%= cl_image_tag article.photo_url, class: "img" %>
+          </div>
+
+          <div class="card-content">
+            <% if user_signed_in? %>
+              <%= link_to article_path(article), class:"title-link text-decoration-none" do %>
+                <div class="card-title-in">
+                  <i class="fa fa-pencil"></i>
+                    <%= article.title %>
+                </div>
+              <% end %>
+            <% else %>
+              <div class="card-title">
                 <%= article.title %>
               </div>
             <% end %>
-          <% else %>
-            <div class="card-category">
-              <%= article.title %>
-            </div>
-          <% end %>
 
-          <%= article.description %>
-          <%= cl_image_tag article.photo_url %>
-          <%= link_to "Télécharger le document", article.attachment_url, target: :_blank %>
+            <div class="card-description">
+              <%= article.description %>
+            </div>
+
+            <div class="card-attachment">
+              <%= link_to "Ouvrir le document", article.attachment_url, target: :_blank, class: "dl-link" %>
+            </div>
+          </div>
         </div>
       <% end %>
-    </div>
-  </div>
 </div>

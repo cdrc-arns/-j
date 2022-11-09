@@ -32,3 +32,85 @@
 .btn:hover {
   background-color: #DF5A25;
 }
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+.card-article {
+  background-color: white;
+  overflow: hidden;
+  width: 70%;
+  height: 220px;
+  margin: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 4px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.card-photo {
+  height: 100%;
+  width: 160px;
+}
+
+.card-photo img {
+  height: 100%;
+  width: 160px;
+}
+
+.card-content {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  height: 90%;
+  width: 100%;
+}
+
+.title-link {
+  color: #DF5A25;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-title-in:hover {
+  color: black;
+}
+
+
+.card-title {
+  color: #DF5A25;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-description {
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.card-attachment {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+.card-attachment a {
+  color: black;
+  font-size: 16px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-attachment a:hover {
+  color: #DF5A25;
+}
